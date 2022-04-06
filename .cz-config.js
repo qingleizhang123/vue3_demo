@@ -1,6 +1,6 @@
 module.exports = {
   types: [
-    { value: 'feat', name: 'feat: 一个新的特性' },
+    { value: 'feat', name: 'feat: 一个新的功能' },
     { value: 'fix', name: 'fix: 修复一个Bug' },
     { value: 'docs', name: 'docs: 变更的只有文档' },
     { value: 'style', name: 'style: 代码风格,格式修复' },
