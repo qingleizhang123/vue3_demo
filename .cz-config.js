@@ -5,7 +5,7 @@ module.exports = {
     { value: 'docs', name: 'docs: 变更的只有文档' },
     { value: 'style', name: 'style: 代码风格,格式修复' },
     { value: 'refactor', name: 'refactor: 代码重构，注意和feat、fix区分开' },
-    { value: 'perf', name: 'perf: 码优化,改善性能' },
+    { value: 'perf', name: 'perf: 代码优化,改善性能' },
     { value: 'test', name: 'test: 测试' },
     { alue: 'chore', name: 'chore: 变更构建流程或辅助工具' },
     { value: 'revert', name: 'revert: 代码回退' },
@@ -44,7 +44,7 @@ module.exports = {
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix'],
   // skip any questions you want
-  skipQuestions: ['scope', 'body', 'breaking'],
+  skipQuestions: ['scope', 'breaking'],
   // limit subject length
   subjectLimit: 100
   // breaklineChar: '|', // It is supported for fields body and footer.
