@@ -17,10 +17,9 @@ const routes: Array<RouteRecordRaw> = [
   }
 ]
 
-const
-  router = createRouter({
-    history: createWebHashHistory(),
-    routes
-  })
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes
+})
 
 export default router
