@@ -1,6 +1,6 @@
 module.exports = {
   types: [
-    { value: '✨feat', name: 'feat: 一个新的功能' },
+    { value: 'feat', name: 'feat: 一个新的功能' },
     { value: '🐛fix', name: 'fix: 修复一个Bug' },
     { value: '📝docs', name: 'docs: 变更的只有文档' },
     { value: '💄style', name: 'style: 代码风格,格式修复' },
@@ -9,9 +9,9 @@ module.exports = {
     { value: '✅test', name: 'test: 测试' },
     { alue: '🔧chore', name: 'chore: 变更构建流程或辅助工具' },
     { value: '⏪revert', name: 'revert: 代码回退' },
-    { value: 'init', name: 'init: 项目初始化' },
-    { value: 'build', name: 'build: 变更项目构建或外部依赖' },
-    { value: 'WIP', name: 'WIP: 进行中的工作' }
+    { value: '✨init', name: 'init: 项目初始化' },
+    { value: '✨build', name: 'build: 变更项目构建或外部依赖' },
+    { value: '✨WIP', name: 'WIP: 进行中的工作' }
   ],
   scopes: [],
   allowTicketNumber: false,
