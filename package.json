@@ -34,6 +34,8 @@
     "@vue/eslint-config-typescript": "^9.1.0",
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "compression-webpack-plugin": "^6.1.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "babel-jest": "^27.0.6",
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
