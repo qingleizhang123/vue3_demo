@@ -1,0 +1,8 @@
+{
+    "UID_MRFlow4d_PreProcess": "Image Preprocess",
+    "UID_MRFlow4d_VesselSegmentation": "Vessel Segmentation",
+    "UID_MRFlow4d_VesselAnalysis":"Vessel Analysis",
+    "UID_MRFlow4d_Replace_Series_Description": "Do you want to replace the currently loaded data? The current status will be cleared. </br> Replace: Replace the currently loaded data. </br> Cancel: Cancel loading the selected data.",
+    "UID_MRFlow4d_Replace_Series_Confirm": "Replace",
+    "UID_MRFlow4d_Replace_Series_Cancel": "Cancel"
+}

@@ -1,26 +1,41 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import * as AppToolkit from 'uih-mcsf-apptoolkit';
 
-const routes: Array<RouteRecordRaw> = [
+const DhsApp = () => import('../Apps/DHS/DhsApp.vue');
+const DhsViewing = () => import('../Apps/DHS/views/DhsViewing.vue');
+const routes: RouteRecordRaw[] = [
   {
+    name: '',
     path: '/',
-    name: 'home',
-    component: HomeView
+    redirect: { name: 'dhs-app' }
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    name: 'dhs-app',
+    path: '/app/DHS/' + AppToolkit.RouteParaEnum.RoutePara_GeneralRoutPara,
+    component: DhsApp,
+    meta: {
+      title: '数字头架'
+    },
+    children: [
+      { path: '', redirect: { name: 'dhs-viewing' } },
+      { name: 'dhs-viewing', path: 'dhs-viewing', component: DhsViewing }
+    ]
+  },
+  {
+    path:
+      '/app/TKASurgeryPlanning/' +
+      AppToolkit.RouteParaEnum.RoutePara_GeneralRoutPara,
+    component: DhsApp,
+    children: [
+      { path: '', redirect: { name: 'dhs-viewing' } },
+      { name: 'dhs-viewing', path: 'dhs-viewing', component: DhsViewing }
+    ]
   }
-]
+];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes
-})
+});
 
-export default router
+export default router;

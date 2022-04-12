@@ -1,4 +1,4 @@
-const CompresssionPlugin = require('compression-webpack-plugin')
+const CompresssionPlugin = require('compression-webpack-plugin');
 module.exports = {
   lintOnSave: false,
   outputDir: 'dist', // 构建输出目录
@@ -7,7 +7,7 @@ module.exports = {
   devServer: {
     open: true,
     host: 'localhost',
-    port: 4201,
+    port: 4202,
     https: false,
     headers: {
       'Cross-Origin-Embedder-Policy': 'require-corp'
@@ -25,11 +25,13 @@ module.exports = {
   },
   css: {
     loaderOptions: {
-      less: {}
+      less: {
+        javascriptEnabled: true
+      }
     }
   },
   configureWebpack: config => {
-    console.log(process.env.NODE_ENV)
+    console.log(process.env.NODE_ENV);
     if (process.env.NODE_ENV === 'production') {
       return {
         performance: {
@@ -40,7 +42,7 @@ module.exports = {
           maxAssetSize: 30000000,
           // 只给出 js 文件的性能提示
           assetFilter: function (assetFilename) {
-            return assetFilename.endsWith('.js')
+            return assetFilename.endsWith('.js');
           }
         },
         plugins: [
@@ -50,31 +52,31 @@ module.exports = {
             deleteOriginalAssets: false
           })
         ]
-      }
+      };
     } else {
       config.output.devtoolModuleFilenameTemplate = info => {
-        const resPath = info.resourcePath
+        const resPath = info.resourcePath;
         if (
           (/\.vue$/.test(resPath) && !/type=script/.test(info.identifier)) ||
           /node_modules/.test(resPath)
         ) {
-          return `webpack:///${resPath}?${info.hash}`
+          return `webpack:///${resPath}?${info.hash}`;
         }
-        return `webpack:///${resPath.replace('./src', 'SouceCode')}`
-      }
+        return `webpack:///${resPath.replace('./src', 'SouceCode')}`;
+      };
     }
   },
   chainWebpack: config => {
     // 移除 prefetch 插件
-    config.plugins.delete('prefetch')
+    config.plugins.delete('prefetch');
     config.optimization.minimizer('terser').tap(args => {
-      args[0].terserOptions.compress.drop_console = true
-      return args
-    })
+      args[0].terserOptions.compress.drop_console = true;
+      return args;
+    });
     if (process.env.analyzer) {
       config
         .plugin('webpack-bundle-analyzer')
-        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
     }
   }
-}
+};

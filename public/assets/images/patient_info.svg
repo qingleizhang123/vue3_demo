@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/header_身份信息</title>
+    <defs>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="28" height="22" rx="0.2"></rect>
+        <filter x="-25.0%" y="-22.7%" width="150.0%" height="163.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0235619438   0 0 0 0 0.0407606734   0 0 0 0 0.0808910425  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-25.0%" y="-22.7%" width="150.0%" height="163.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.988235294   0 0 0 0 0.988235294   0 0 0 0 0.992156863  0 0 0 0.299142264 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icon/header_身份信息" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,0 L36,0 C38.209139,-4.05812251e-16 40,1.790861 40,4 L40,36 C40,38.209139 38.209139,40 36,40 L4,40 C1.790861,40 2.705415e-16,38.209139 0,36 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="矩形备份-6"></path>
+        <g id="编组-10" transform="translate(6.000000, 9.000000)">
+            <path d="M26,12.8894709 C26,6.07543218 20.627417,4 14,4 C7.372583,4 2,6.07543218 2,12.8894709 C2,19.7035097 26,19.7035097 26,12.8894709 Z" id="椭圆形备份" fill="#A2C2FF" filter="url(#filter-1)"></path>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill-opacity="0.6" fill="#3E4A62" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+            </g>
+            <rect id="矩形" fill="#C9D3E6" x="16.3333333" y="8" width="8.16666667" height="1.61538462"></rect>
+            <rect id="矩形备份-3" fill="#C9D3E6" x="19.1153846" y="12.3076923" width="5.38461538" height="1.61538462"></rect>
+        </g>
+        <path d="M15,20 C17.6887547,20 19.8818181,22.1223067 19.9953805,24.7831104 L20,25 L10,25 C10,24.8919205 10.0034292,24.7846418 10.0101847,24.678267 C10.1760325,22.0667739 12.3466558,20 15,20 Z M15,15 C16.3807119,15 17.5,16.1192881 17.5,17.5 C17.5,18.8807119 16.3807119,20 15,20 C13.6192881,20 12.5,18.8807119 12.5,17.5 C12.5,16.1192881 13.6192881,15 15,15 Z" id="形状结合" fill="#C9D3E6"></path>
+    </g>
+</svg>

@@ -17,7 +17,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     indent: ['error', 2],
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-explict-any': ['off']
   },
   overrides: [
     {
@@ -30,4 +31,4 @@ module.exports = {
       }
     }
   ]
-}
+};

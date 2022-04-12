@@ -47,4 +47,4 @@ module.exports = {
   skipQuestions: ['scope', 'footer', 'breaking'],
   // limit subject length
   subjectLimit: 100
-}
+};
