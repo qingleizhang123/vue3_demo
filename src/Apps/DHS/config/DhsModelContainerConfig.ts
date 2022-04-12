@@ -2,7 +2,6 @@ import * as AppFramework from 'uih-mcsf-appframework';
 import * as AppToolkit from 'uih-mcsf-apptoolkit';
 import { workflowConfig } from './DhsWorkflowConfig';
 import { commandConfig } from './DhsCommandConfig';
-import { UIBotAppConfigureModel } from '../../model/UIBotAppConfigureModel';
 export const modelContainerConfig = {
   modelCollection: [
     {
