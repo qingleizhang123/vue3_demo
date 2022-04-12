@@ -18,7 +18,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     indent: ['error', 2],
     'prettier/prettier': 'error',
-    '@typescript-eslint/no-explicit-any': ['off']
+    '@typescript-eslint/no-explicit-any': ['off'],
+    'vue/html-indent': ['error', 2]
   },
   overrides: [
     {
