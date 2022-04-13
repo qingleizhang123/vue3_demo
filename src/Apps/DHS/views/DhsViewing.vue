@@ -22,6 +22,7 @@
       </div>
       <div class="panel-area"></div>
     </div>
+    <upload-file></upload-file>
   </div>
 </template>
 
@@ -29,6 +30,7 @@
 import { ModelContainer } from 'uih-mcsf-appframework';
 import { inject } from 'vue';
 import NavHeader from '../components/NavHeader.vue';
+import UploadFile from '../components/UploadFile.vue';
 const layoutName = 'layout1x1';
 const modelContainer: ModelContainer = inject('modelContainer');
 console.log(modelContainer);

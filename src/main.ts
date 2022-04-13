@@ -24,7 +24,8 @@ import {
   Switch,
   Alert,
   Spin,
-  message
+  message,
+  Upload
 } from 'ant-design-vue';
 import {
   AppContextMenu,
@@ -72,7 +73,7 @@ ProgressBar.install(app);
 Switch.install(app);
 Alert.install(app);
 Spin.install(app);
-
+Upload.install(app);
 MedViewerControlComponent.install(app);
 app.mount('#app');
 

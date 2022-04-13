@@ -1,8 +1,0 @@
-{
-    "UID_MRFlow4d_PreProcess": "图像预处理",
-    "UID_MRFlow4d_VesselSegmentation": "血管分割",
-    "UID_MRFlow4d_VesselAnalysis":"血流分析",
-    "UID_MRFlow4d_Replace_Series_Description": "是否替换当前加载的数据，当前的状态将被清除. </br> 替换：替换当前加载的所有数据 </br> 取消：取消加载选中数据",
-    "UID_MRFlow4d_Replace_Series_Confirm": "替换",
-    "UID_MRFlow4d_Replace_Series_Cancel": "取消"
-}

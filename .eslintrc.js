@@ -19,6 +19,7 @@ module.exports = {
     indent: ['error', 2],
     'prettier/prettier': 'error',
     '@typescript-eslint/no-explicit-any': ['off'],
+    '@typescript-eslint/no-unused-vars': ['off'],
     'vue/html-indent': ['error', 2]
   },
   overrides: [

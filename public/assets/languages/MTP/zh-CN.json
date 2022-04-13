@@ -1,8 +1,0 @@
-{
-    "UID_Application_Name": "MTP",
-    "UID_MTP_Select_One_Study": "请选择其中的一个检查进入应用。",
-    "UID_MTP_Incomplete_Recognized_Sequences": "无法打开应用：必须同时具备MTP序列产生的T1 map、T2* map和PD map。",
-    "UID_MTP_Select_Series_Title": "数据选择",
-    "UID_MTP_Select_Series_Description": "找到多个符合条件的序列，请确认。",
-    "UID_MTP_Data_Checking_Error": "序列中存在非法数据。"
-}
